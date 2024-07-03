@@ -95,12 +95,12 @@ const App = () => {
 
       formData.append('image', image);
 
-      const uploadProfile = await axios.post(`${API}/upload/${id}`, formData);
+      const uploadProfileOfUser = await axios.post(`${API}/upload/${id}`, formData);
 
-      if(uploadProfile.data){
+      if(uploadProfileOfUser.data){
         setLoader(false)
-        setProfile(uploadProfile.data)
-        toast.success("Successfully uploaded pic")
+        setProfile(uploadProfileOfUser.data)
+        toast.success("Successfully uploaded user-profile pic")
       }
 
 
