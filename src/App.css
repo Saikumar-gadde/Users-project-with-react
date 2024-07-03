@@ -1,0 +1,17 @@
+.spinner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner-1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.loader{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
